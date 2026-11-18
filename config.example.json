@@ -1,0 +1,10 @@
+{
+  "InterfaceName": "eth0",
+  "RedisDataBaseAddress": "127.0.0.1:6379",
+  "RedisCacheTTL": "168h",
+  "ListOfBlockedCountryCodes": ["CN", "RU"],
+  "ListenAddress": ":2115",
+  "LookupBaseURL": "http://ip-api.com",
+  "LookupRequestsPerMinute": 40,
+  "DryRun": true
+}

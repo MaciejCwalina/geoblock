@@ -1,0 +1,26 @@
+# Runs geoblock on the host network next to a Redis cache.
+# Edit config.example.json (or mount your own) before starting:
+#   docker compose up -d --build
+services:
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--bind", "127.0.0.1", "--port", "6379", "--save", "60", "1"]
+    network_mode: host
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+
+  geoblock:
+    build: .
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    volumes:
+      - ./config.example.json:/etc/geoblock/config.json:ro
+    depends_on:
+      - redis
+    restart: unless-stopped
+
+volumes:
+  redis-data:
