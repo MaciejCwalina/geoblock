@@ -25,13 +25,13 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/redis/go-redis/v9"
 
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/capture"
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/config"
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/firewall"
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/geo"
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/metrics"
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/monitor"
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/netclass"
+	"github.com/MaciejCwalina/geoblock/internal/capture"
+	"github.com/MaciejCwalina/geoblock/internal/config"
+	"github.com/MaciejCwalina/geoblock/internal/firewall"
+	"github.com/MaciejCwalina/geoblock/internal/geo"
+	"github.com/MaciejCwalina/geoblock/internal/metrics"
+	"github.com/MaciejCwalina/geoblock/internal/monitor"
+	"github.com/MaciejCwalina/geoblock/internal/netclass"
 )
 
 // memoryCacheEntries bounds the in-process cache (roughly 100 bytes each).

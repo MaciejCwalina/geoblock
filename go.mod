@@ -1,4 +1,4 @@
-module github.com/MaciejCwalina/go_prometheus_packet_monitoring
+module github.com/MaciejCwalina/geoblock
 
 go 1.26.0
 

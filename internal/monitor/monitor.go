@@ -12,9 +12,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/firewall"
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/geo"
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/netclass"
+	"github.com/MaciejCwalina/geoblock/internal/firewall"
+	"github.com/MaciejCwalina/geoblock/internal/geo"
+	"github.com/MaciejCwalina/geoblock/internal/netclass"
 )
 
 // Resolver is the lookup chain used by the monitor.

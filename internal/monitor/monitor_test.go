@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/geo"
-	"github.com/MaciejCwalina/go_prometheus_packet_monitoring/internal/netclass"
+	"github.com/MaciejCwalina/geoblock/internal/geo"
+	"github.com/MaciejCwalina/geoblock/internal/netclass"
 )
 
 var (

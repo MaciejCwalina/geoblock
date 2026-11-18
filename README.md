@@ -5,9 +5,6 @@ up the country of every remote address and drops traffic to and from
 countries you list, using local iptables rules. Traffic counters per country
 and direction are exported for Prometheus.
 
-The repository is still called `go_prometheus_packet_monitoring`; the binary
-is `geoblock`.
-
 ## How it works
 
 ```
